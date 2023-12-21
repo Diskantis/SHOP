@@ -31,6 +31,7 @@ export class UsersService {
     if (existingByUserName) {
       return { warningMessage: 'Пользователь с таким именем уже существует' };
     }
+
     if (existingByEmail) {
       return { warningMessage: 'Пользователь с таким email уже существует' };
     }
